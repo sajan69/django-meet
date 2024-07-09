@@ -4,10 +4,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Login & Registration Form</title>
+  <meta name="description" content="Video Conference">
+  <meta name="keywords" content="video, conference, meeting, online">
+  <meta name="author" content="Sajan Adhikari">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login & Registration Form</title>
-  
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="generator" content="VS Code">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="global">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
@@ -16,8 +25,8 @@
       <header>Login</header>
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}
-        <input type="text" placeholder="Enter your email" name="email">
-        <input type="password" placeholder="Enter your password" name="password">
+        <input type="text" placeholder="Enter your email" name="email" required>
+        <input type="password" placeholder="Enter your password" name="password" required>
         <input type="submit" class="button" value="Login">
         <center>
           {% if success %}
@@ -28,9 +37,12 @@
           {% endif %}
         </center>
       </form>
+      <div class="forgot-password" style="justify-content: center; display: flex; margin-top: 10px; color: #fff; font-size: 14px; text-align: center; width: 100%;">
+        <a href="{% url 'password_reset_request' %}">Forgot your password?</a>
+      </div>
       <div class="signup">
         <span class="signup">Don't have an account?
-         <a href="{% url 'register' %}"><label for="check">Signup</label></a>
+          <a href="{% url 'register' %}"><label for="check">Signup</label></a>
         </span>
       </div>
     </div>

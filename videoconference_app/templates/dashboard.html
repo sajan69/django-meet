@@ -4,9 +4,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="description" content="Video Conference">
+  <meta name="keywords" content="video, conference, meeting, online">
+  <meta name="author" content="Sajan Adhikari">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Video Conference</title>
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="generator" content="VS Code">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="global">
+
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <body>
     <div class="dashboard">
@@ -16,6 +27,9 @@
         <a href="{% url 'join_room' %}" class="button">Join Meeting</a>
         <a href="{% url 'logout' %}" class="button">Logout</a>
     </div>
+    <footer style="text-align: center; margin-top: 20px; color: #fff;">
+      <p>&copy; Copyright 2024 | Sajan Adhikari</p>
+    </footer>
   </body>
 </head>
 </html>

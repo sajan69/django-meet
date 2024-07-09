@@ -9,5 +9,8 @@ urlpatterns = [
     path('logout/',views.logout_view, name='logout'),
     path('join/',views.join_room, name='join_room'),
     path('',views.index, name='index'),
+    path('password-reset/', views.password_reset_request, name='password_reset_request'),
+    path('password-reset/verify/', views.password_reset_verify, name='password_reset_verify'),
+    path('password-reset/change/', views.password_reset_change, name='password_reset_change'),
 
 ]
