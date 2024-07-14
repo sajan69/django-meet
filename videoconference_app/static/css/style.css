@@ -9,7 +9,8 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #009579;
+  /* Gradeint indsigo and pink mix */
+  background: linear-gradient(120deg, #3498db, #8e44ad);
 }
 .container{
   position: absolute;
@@ -58,7 +59,7 @@ body{
  }
 .form a{
   font-size: 16px;
-  color: #009579;
+  color: #3F51B5;
   text-decoration: none;
 }
 .form a:hover{
@@ -66,7 +67,7 @@ body{
 }
 .form input.button{
   color: #fff;
-  background: #009579;
+  background: #3F51B5;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -75,14 +76,14 @@ body{
   transition: 0.4s;
 }
 .form input.button:hover{
-  background: #006653;
+  background: #3949AB;
 }
 .signup{
   font-size: 17px;
   text-align: center;
 }
 .signup label{
-  color: #009579;
+  color: #3F51B5;
   cursor: pointer;
 }
 .signup label:hover{
@@ -97,7 +98,7 @@ body{
   padding: 10px;
 }
 
-/* Set the background color to green
+/* Set the background color to gradient color
     and the text color to white */
 .intro {
   color: white;
@@ -125,8 +126,10 @@ body{
 
 /* make the buttons inside the div with class name intro look attractive */
 .intro a {
-  background-color: #4CAF50;
-  border: none;
+  /* backgrtound color indigo-500 */
+  background-color: #3F51B5;
+  border-radius: 5px;
+  
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -148,7 +151,7 @@ body{
 
 /* make the buttons inside the div with class name intro look attractive when hovered */
 .intro a:hover {
-  background-color: #45a049;
+  background-color: #3949AB;
 }
 
 /* center the div named dashboard */

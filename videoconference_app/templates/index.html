@@ -17,12 +17,14 @@
   <meta name="rating" content="general">
   <meta name="revisit-after" content="7 days">
   <meta name="distribution" content="global">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <body>
     <div class="intro">
-        <h1>Welcome to my Awesome Video Conferencing App!</h1>
-        <h2>For all your professional and personal needs!</h2>
+        <h1 class= 'd-flex justify-content-center'>Elevate Your Connections with Our Video Conferencing Solution</h1>
+        <h2>Seamless collaboration for your personal and professional needs.</h2>
         <!-- create a signup and signin button-->
         <a href="{% url 'login' %}" class="button">Sign In</a>
         <a href="{% url 'register' %}" class="button">Sign Up</a>
